@@ -5,51 +5,139 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>多源新闻简报 - 2026-02-12</title>
   <style>
-    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Noto Sans CJK SC",sans-serif;max-width:920px;margin:0 auto;padding:20px;line-height:1.6;color:#1f2937}
-    h1,h2{line-height:1.25}
-    .muted{color:#6b7280}
-    .card{border:1px solid #e5e7eb;border-radius:12px;padding:14px 16px;margin:12px 0}
-    a{word-break:break-all}
-    .tag{display:inline-block;background:#eef2ff;color:#3730a3;border-radius:999px;padding:2px 10px;font-size:12px;margin-right:8px}
+    :root{
+      --bg:#f6f8fb;--card:#fff;--text:#1f2937;--muted:#6b7280;--line:#e5e7eb;
+      --accent:#2563eb;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Noto Sans CJK SC",sans-serif;line-height:1.6}
+    .wrap{max-width:1100px;margin:0 auto;padding:20px}
+    h1{margin:4px 0 8px;font-size:28px}
+    h2{margin:28px 0 10px;font-size:22px}
+    .muted{color:var(--muted)}
+    .top{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .tag{background:#e8efff;color:#2446a8;border-radius:999px;padding:4px 10px;font-size:12px}
+
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:8px;flex-wrap:wrap}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+    .thumb{width:100%;height:160px;object-fit:cover;background:#eef2f7;display:none}
+    .content{padding:14px}
+    .source{font-size:12px;color:#334155;font-weight:600;margin-bottom:6px}
+    .title{font-size:16px;font-weight:700;line-height:1.4;margin:0 0 8px}
+    .subtitle{font-size:14px;margin:0 0 8px;color:#334155}
+    .summary{font-size:14px;color:#374151;margin:0 0 10px}
+    .meta{font-size:12px;color:var(--muted)}
+    a{color:var(--accent);text-decoration:none;word-break:break-all}
+    a:hover{text-decoration:underline}
+
+    .compare{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:12px}
+    .compare h3{margin:0 0 8px;font-size:16px}
+    .compare p{margin:6px 0}
+
+    footer{margin:26px 0 10px;color:var(--muted);font-size:12px}
   </style>
 </head>
 <body>
-  <h1>今日多源新闻简报</h1>
-  <p class="muted">日期：2026-02-12（GMT+8）</p>
-  <p><span class="tag">Reuters</span><span class="tag">NYT</span><span class="tag">联合早报</span><span class="tag">人民日报</span><span class="tag">环球时报</span></p>
+  <div class="wrap">
+    <div class="top">
+      <h1>今日多源新闻简报</h1>
+      <div class="muted">日期：2026-02-12（GMT+8）｜卡片流阅读版</div>
+      <div class="tags">
+        <span class="tag">Reuters（Google News RSS）</span>
+        <span class="tag">New York Times</span>
+        <span class="tag">联合早报</span>
+        <span class="tag">人民日报</span>
+        <span class="tag">环球时报</span>
+      </div>
+      <p class="muted" style="margin:10px 0 0">说明：Reuters 使用 Google News RSS 替代流；人民日报/环球时报部分为“最新可得”而非当日高频更新。</p>
+    </div>
 
-  <div class="card">
-    <h2>使用说明</h2>
-    <p>本页为群聊长消息替代版，减少群内风控风险。完整条目和对比分析可持续更新到这个页面。</p>
+    <div class="section-head"><h2>Reuters（10条）</h2></div>
+    <div class="grid">
+      <article class="card"><div class="content"><div class="source">Reuters</div><h3 class="title">Almost 800 Lufthansa flights cancelled as pilots, cabin crew walk out</h3><p class="subtitle">汉莎航空飞行员与乘务员罢工，近800个航班取消</p><p class="summary">劳资冲突导致大规模停航，欧洲出行受明显冲击。</p><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxQUTFSSGs2Yi1sNjQ3aXBJSUdOYjhRYVZkRWpEMkIxR0syY1liQklsZnRKOXVyWUtGWEVoaUlNT3pncWRvaUl5SGlwWEhORFZBX0gxQWhjY2djSTFlMjFXcTJobUQ3ejFUeTd2VE9fd0lCRmxmRDRndTVkUlVWTlhIVzNwYmpYMk9LTGtkX3Fyd1M2aFREZVFEcFFLRkVDa1poVDRoaElDR09tbVVTQjNQTnpQc1hCbFJWSHpzOFpKbw?oc=5" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">Reuters</div><h3 class="title">Ukrainian Heraskevych out of the Games for helmet depicting war dead</h3><p class="subtitle">乌克兰选手因头盔涉战争图像被取消资格</p><p class="summary">赛事方以政治表达限制处理，引发中立规则与表达边界争议。</p><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQWDRUa1c5MjBuQmNmV0IxLXZwTGU4N3VhZHcyY0RSb2w2QjNCbDYzb1NCUF84c3pDM0RINGN2cTU4RHo1TmxHYXQzS2ZJdDB5Vml5eWNMYjNIc0VWY1RQMHV3cVhseEJWV0pPdDYzVkNNZUxzR0FiN2dtd2tqOUpjN3l3OXRRc3ZDZ2MzdlBvNTd0QURmNXV4WHpERVZkaTF5N1BnOHVvMlhZbFBLeFE?oc=5" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">Reuters</div><h3 class="title">Spain and Portugal on high alert as storms cause more damage</h3><p class="subtitle">风暴加剧破坏，西班牙和葡萄牙进入高度警戒</p><p class="summary">极端天气持续冲击基础设施，两国提高应急等级。</p><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNbEFmQ25jWW1jTk91VVlPWHFPWmd2VzVwVnJaaU5qMWdBNTd3bXctY2xldVpCX0R0elVLcjE0b1NaY0FmNk51aHlTRUFQeTBlcTNSTGZWMHAwSDZTR0M2MHhGRExZcTdickpXellVNk83ME9TbWhXaVpiT2xSb2lheUpsRW8teWtlTU44ZFhvMmtvWDlrNkVQb0o5YmlrVXZpV2F3OGYtc3VNbm1SaG9WaXF6OUdCa0k?oc=5" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">Reuters</div><h3 class="title">Schroders agrees $13.5 billion sale to Nuveen as family sells out</h3><p class="subtitle">施罗德达成约135亿美元出售交易</p><p class="summary">大型资管并购落地，控制权与战略方向同步调整。</p><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxPYzhTUDBTSXlUZWdFbXpOTWpMbUF5eTBCaDNzS1EyaHdZREg1ZFVKTzU1TTZkcWx0c0YxeUZkcEIwa3NtVl9XcEt5M1Fla3VzYTVTdDhSQXJtaFVKLTZzNW5NVV9RZVpFbHFnYUd1ZnRFMFJFMVhuRThwWnlGbFgxZ2ViOWo4cUpac3BMaQ?oc=5" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">Reuters</div><h3 class="title">China softens stance on EV makers negotiating with EU individually</h3><p class="subtitle">中国放宽立场，允许车企与欧盟分别谈判</p><p class="summary">中欧电动车摩擦处理中，谈判路径出现更灵活空间。</p><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxNM1h3b0ZmenQ4QTBaM2luX3ZGZF9xazFZeGFKa1diRl9BZ2NSVzdqVG1fX3RLXzZ3b1B6ZWNGcEN1UzE4a3BNUU9yaXRKWFBaa1hKOHMxWWVfZ19SVlhhaW1Ob0tyU1dfMGJMdjkzX1pNQnFMYkw4aTBTbUxkQkp2N0R5VEFHX3VzOUd4cUd6ckJYdjZwZlVLbGcyQUxGUlJISFhDZnYxdkxUUHlvQ28yZlNHejA2cDFLVkw5TjZsWFlrRm5odHMyRw?oc=5" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">Reuters</div><h3 class="title">Sanofi ousts CEO Hudson after stalled turnaround at vaccine giant</h3><p class="subtitle">赛诺菲撤换CEO，转型受阻</p><p class="summary">疫苗业务增长与转型预期不及目标，管理层重组加速。</p><a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxORExYYlYzU1RRMHp2S19jNlBURWJSNUpuQUNBZU9Gay10ejc2elVRcG8yWG9hWkxOazR2Qk9LaXNaQmxGTHJJVEstSjBoVjNDT2h4dGpzN1FFUlBkd0JxYlUtWVBEWVVnSWd1ZWZoNmY5THVWc1A4ZTdSZ090OER4ajNoQWRKcnFFWVlXWmlUTUw2bHpWSXNpaDRtSUpyNlFHWWtzcWM0VzZ0bjlpdDZGWXZQdjBNZFhvNjRqLUtQd2o5OXRESDV6ZTFvc0Z0bU9ncjJjR1hSQXdVRnFoWTNBbndVRkxmbEk?oc=5" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">Reuters</div><h3 class="title">Bangladesh election live: Long lines in first vote since Sheikh Hasina's ouster</h3><p class="subtitle">孟加拉过渡期首次投票出现长队</p><p class="summary">政治过渡期选举关注度高，现场参与度显著。</p><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOczVQVFQ5SXVhYUNRRzV6dWJBeDNKWWhPOTdzdUxleWRxRnFQSGJfYy1PVEpJdUNtOUY3OTVIQS1iVDJOSldkMWh1QUtzYms4b29rZndVZldfTTFkdlNZSFpXeTB1VTlETDNXXzFDXzlnblVrdHlSRjVkdEJGaG5fX05mbjRuUndfMi1zRmVtNUY5ZDRxTkFGeEtqbDVfZVVPa1ZLTGZneXM2OXhWSWIyNHlOOWZQeHNvX2ZBME9Yaw?oc=5" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">Reuters</div><h3 class="title">China lowers EU dairy tariffs in final ruling after 18-month probe</h3><p class="subtitle">中国终裁下调欧盟乳制品关税</p><p class="summary">终裁释放缓和信号，中欧贸易摩擦边际降温。</p><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQaktRQ19HRTZoTUpFWGZzYVFQZWZEa0U4QWk1Q044Zjh6Slc4bFUwbUtmTkd5dXhoNmtZOUdEY3g4LVI3QlJzdWFScUsyRE5YeWxyUjhDZ3BSdkd6WEh4bmN3RF81cnVUUGwyM2hoVDdKVXBHYWJIR0tsZmZnTjY5N1JkTEh0azdlaU5BVk9FM29RRnpQOFBJejdMZHkySUZzMmc?oc=5" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">Reuters</div><h3 class="title">Carrefour announces sale of Romanian unit</h3><p class="subtitle">家乐福宣布出售罗马尼亚业务</p><p class="summary">欧洲零售资产再平衡，企业优化区域配置。</p><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcWhzejhLaENORGlWVWp5aWtOSVNTRjZLVWI5Zk1MZExrM0FNLVZ5MEpyLWRpWTRHXzhEUWtUX0lJQVhKX1dZeVVtNGUyVURnX29OUEVQbm1QRGdWaXU0ZjRUeXN3WTVuTTEzTFZoQlE0bGN2OEFmbzVfcnIwMFNORFh5Z2plUG1rYzhZ?oc=5" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">Reuters</div><h3 class="title">Foreign cars flow to Russia through China, skirting Ukraine war sanctions</h3><p class="subtitle">外媒称外国汽车经由中国流入俄罗斯</p><p class="summary">供应链转运路径折射制裁执行灰区与监管难点。</p><a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTXgxOEdfc0pSMEFRbGxMZXU2c2VuMzNzMGExTUR2WlFfODQ5Z01xa0NYOWNFdU9uYllaR2ttb0xQNVQ2QUJ4eFRGS19CUWhZY0xraHZBVmNlY1MyY0ZlaFdoTF9xckpzVmhTRF9tNEVjOV9JaVJwZWF5Vi03dG5ERzUyOE5XLVctRlVSLVJ5YzFYcFpWUWF0MEJsYXRSSG5Dd2tka3NYV0pOSEYtZUwtMzFwRzB4TkVXQ0d5QlQzb2EwMHcwTjl4X1Q5MTRnRnlj?oc=5" target="_blank">原文链接</a></div></article>
+    </div>
+
+    <div class="section-head"><h2>New York Times（10条）</h2></div>
+    <div class="grid">
+      <article class="card"><div class="content"><div class="source">NYT</div><h3 class="title">Border Officials Are Said to Have Caused El Paso Closure by Firing Anti-Drone Laser</h3><p class="subtitle">边境官员被指用反无人机激光引发空域关闭</p><p class="summary">疑似误判目标导致空域临时管制并引发连锁影响。</p><a href="https://www.nytimes.com/2026/02/11/us/trump-administration-el-paso-airspace-closure-questions.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">NYT</div><h3 class="title">What We Know About the El Paso Airspace Shutdown</h3><p class="subtitle">埃尔帕索空域关闭已知信息梳理</p><p class="summary">时间线和关键事实汇总，聚焦事件责任链。</p><a href="https://www.nytimes.com/2026/02/11/us/el-paso-airspace-shutdown-what-to-know.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">NYT</div><h3 class="title">Anti-Drone Laser Is Said to Have Caused El Paso Airport Chaos...</h3><p class="subtitle">反无人机激光引发机场混乱（播客）</p><p class="summary">跟进讨论规则执行与执法边界。</p><a href="https://www.nytimes.com/2026/02/12/podcasts/the-headlines/el-paso-anti-drone-laser-pam-bondi-epstein.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">NYT</div><h3 class="title">Trump’s Director of Election Security Is an Election Denier</h3><p class="subtitle">选举安全负责人任命引争议</p><p class="summary">人事安排被质疑影响选举治理公信力。</p><a href="https://www.nytimes.com/2026/02/12/us/politics/trump-kurt-olsen-election-denialism.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">NYT</div><h3 class="title">House Passes Strict Voter ID Bill, Amplifying Trump’s Claims of Fraud</h3><p class="subtitle">众议院通过更严格选民ID法案</p><p class="summary">选举规则再成党争焦点，制度分歧加深。</p><a href="https://www.nytimes.com/2026/02/11/us/politics/house-passes-voter-id-bill.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">NYT</div><h3 class="title">U.S. Attorney Chosen to Replace Trump Pick Is Quickly Fired by White House</h3><p class="subtitle">白宫快速撤换联邦检察官人选</p><p class="summary">司法系统人事波动引发程序与政治争论。</p><a href="https://www.nytimes.com/2026/02/11/nyregion/donald-kinsella-ndny-sarcone-trump.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">NYT</div><h3 class="title">Why Pennsylvania’s Two Most Powerful Democrats Don’t Speak</h3><p class="subtitle">宾州两位核心民主党人物失和</p><p class="summary">党内裂痕影响地方政策协同。</p><a href="https://www.nytimes.com/2026/02/12/us/politics/john-fetterman-josh-shapiro-pennsylvania.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">NYT</div><h3 class="title">Anthropic Invests $20 Million in Super PAC to Counter OpenAI</h3><p class="subtitle">Anthropic 投入2000万美元涉足政策影响竞争</p><p class="summary">AI竞争外溢至监管与游说层面。</p><a href="https://www.nytimes.com/2026/02/12/technology/anthropic-super-pac-openai.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">NYT</div><h3 class="title">Olympic Figure Skaters Are on Thin Ice Over Music Copyright Rules</h3><p class="subtitle">花滑选手面临音乐版权合规压力</p><p class="summary">版权规则对竞技赛事形成新的制度约束。</p><a href="https://www.nytimes.com/2026/02/12/world/europe/winter-olympics-figure-skating-music-copyright.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">NYT</div><h3 class="title">Ukrainian Olympian Is Disqualified Over Helmet With Images of War Dead</h3><p class="subtitle">乌克兰奥运选手“头盔事件”遭取消资格</p><p class="summary">“赛事中立”与“战争表达”冲突成为焦点。</p><a href="https://www.nytimes.com/2026/02/12/world/olympics/ukraine-skeleton-olympics-banned-helmet-heraskevych.html" target="_blank">原文链接</a></div></article>
+    </div>
+
+    <div class="section-head"><h2>联合早报（10条）</h2></div>
+    <div class="grid">
+      <article class="card"><div class="content"><div class="source">联合早报</div><h3 class="title">台陆委会：台湾对陆投资持续缩减 去年大降近六成</h3><a href="https://www.zaobao.com.sg/news/china/story20260212-8451607" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">联合早报</div><h3 class="title">中国网信办春节整治不婚不育反婚反育“不良价值观”</h3><a href="https://www.zaobao.com.sg/news/china/story20260212-8451387" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">联合早报</div><h3 class="title">台美ART将签署 台行政院长：确保产业冲击降至最低</h3><a href="https://www.zaobao.com.sg/news/china/story20260212-8451075" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">联合早报</div><h3 class="title">中国旅社：更多中国游客农历新年长期到俄罗斯和泰国旅游</h3><a href="https://www.zaobao.com.sg/news/china/story20260212-8453328" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">联合早报</div><h3 class="title">奔驰CFO预计中国销量再跌 所有其他市场将实现增长</h3><a href="https://www.zaobao.com.sg/news/china/story20260212-8453215" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">联合早报</div><h3 class="title">墨加征关税后 中墨经贸官员首次面对面会晤</h3><a href="https://www.zaobao.com.sg/news/china/story20260212-8452843" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">联合早报</div><h3 class="title">解放军在南中国海开展实战化训练考核</h3><a href="https://www.zaobao.com.sg/news/china/story20260212-8452610" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">联合早报</div><h3 class="title">台军方否认猎鸮无人机实弹测试效果不如预期</h3><a href="https://www.zaobao.com.sg/news/china/story20260212-8452309" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">联合早报</div><h3 class="title">任内首次 赖清德特赦闷死脑麻儿八旬妇免服刑</h3><a href="https://www.zaobao.com.sg/news/china/story20260212-8452068" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">联合早报</div><h3 class="title">特朗普期待4月访华 中国外交部：双方就此保持沟通</h3><a href="https://www.zaobao.com.sg/news/china/story20260212-8452055" target="_blank">原文链接</a></div></article>
+    </div>
+
+    <div class="section-head"><h2>人民日报（最新可得10条）</h2></div>
+    <div class="grid">
+      <article class="card"><div class="content"><div class="source">人民日报</div><h3 class="title">学习卡丨“人不负青山，青山定不负人”</h3><a href="http://politics.people.com.cn/n1/2025/0605/c1001-40494898.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">人民日报</div><h3 class="title">镜观·足迹｜呵护千山万水 擘画永续发展</h3><a href="http://politics.people.com.cn/n1/2025/0605/c1001-40494899.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">人民日报</div><h3 class="title">学习手记 | “环境就是民生”</h3><a href="http://politics.people.com.cn/n1/2025/0605/c1001-40494900.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">人民日报</div><h3 class="title">刘国中在安徽调研时强调 全力以赴夺取夏粮丰收</h3><a href="http://politics.people.com.cn/n1/2025/0605/c1001-40494881.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">人民日报</div><h3 class="title">韩正会见中美高级别二轨对话美方代表团</h3><a href="http://politics.people.com.cn/n1/2025/0605/c1001-40494879.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">人民日报</div><h3 class="title">国务院印发《关于开展第四次全国农业普查的通知》</h3><a href="http://politics.people.com.cn/n1/2025/0605/c1001-40494878.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">人民日报</div><h3 class="title">中央军委主席习近平签署命令 发布《军事设施建设条例》</h3><a href="http://politics.people.com.cn/n1/2025/0605/c1024-40494849.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">人民日报</div><h3 class="title">丁薛祥在山西调研时强调 确保实现“平安高考”目标</h3><a href="http://politics.people.com.cn/n1/2025/0605/c1024-40494847.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">人民日报</div><h3 class="title">中办印发《党组讨论和决定党员处分事项工作程序规定》</h3><a href="http://politics.people.com.cn/n1/2025/0605/c1001-40494813.html" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">人民日报</div><h3 class="title">全国人大常委会启动节约能源法执法检查</h3><a href="http://politics.people.com.cn/n1/2025/0605/c1001-40494812.html" target="_blank">原文链接</a></div></article>
+    </div>
+
+    <div class="section-head"><h2>环球时报（最新可得10条）</h2></div>
+    <div class="grid">
+      <article class="card"><div class="content"><div class="source">环球时报</div><h3 class="title">Chinese, Iranian diplomats meet before US-Iran nuclear talk...</h3><a href="https://www.globaltimes.cn/page/202602/1354898.shtml" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">环球时报</div><h3 class="title">China stresses Taiwan at 'core of core interests' after Xi-Trump call...</h3><a href="https://www.globaltimes.cn/page/202602/1354899.shtml" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">环球时报</div><h3 class="title">Uruguayan president visits Great Wall, Palace Museum...</h3><a href="https://www.globaltimes.cn/page/202602/1354683.shtml" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">环球时报</div><h3 class="title">Trump claims India will buy Venezuelan oil...</h3><a href="https://www.globaltimes.cn/page/202602/1354617.shtml" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">环球时报</div><h3 class="title">Takaichi skipping of TV debate due to 'hand injury'...</h3><a href="https://www.globaltimes.cn/page/202602/1354620.shtml" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">环球时报</div><h3 class="title">Chinese FM holds strategic dialogue with Russia's Shoigu...</h3><a href="https://www.globaltimes.cn/page/202602/1354633.shtml" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">环球时报</div><h3 class="title">No case of Nipah virus disease detected in China so far...</h3><a href="https://www.globaltimes.cn/page/202601/1354289.shtml" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">环球时报</div><h3 class="title">China's first Type 054B frigate reaches operational capability...</h3><a href="https://www.globaltimes.cn/page/202601/1353945.shtml" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">环球时报</div><h3 class="title">PLA Navy's Type 055 large destroyer boosts anti-submarine capabilities...</h3><a href="https://www.globaltimes.cn/page/202601/1353715.shtml" target="_blank">原文链接</a></div></article>
+      <article class="card"><div class="content"><div class="source">环球时报</div><h3 class="title">S. Korea's ex-president Yoon sentenced to 5 years in prison...</h3><a href="https://www.globaltimes.cn/page/202601/1353435.shtml" target="_blank">原文链接</a></div></article>
+    </div>
+
+    <h2>交叉议题对比</h2>
+    <div class="compare">
+      <h3>A) 乌克兰选手“头盔事件”</h3>
+      <p><b>Reuters</b> 更偏“规则执行与事件结果”；<b>NYT</b> 更偏“价值冲突与表达边界”。</p>
+      <p>对应链接：Reuters 第2条 / NYT 第10条</p>
+    </div>
+    <div class="compare">
+      <h3>B) 中美互动与台海议题</h3>
+      <p><b>联合早报</b> 偏“外交进展与官方表态”；<b>环球时报</b> 偏“立场阐释与战略信号”。</p>
+      <p>对应链接：早报 第10条 / 环球时报 第2条</p>
+    </div>
+
+    <footer>最后更新：2026-02-12 20:45</footer>
   </div>
-
-  <div class="card">
-    <h2>今日重点（示例）</h2>
-    <ul>
-      <li><b>Reuters:</b> 汉莎近800航班取消（罢工）</li>
-      <li><b>Reuters:</b> 西葡风暴灾害预警升级</li>
-      <li><b>NYT:</b> El Paso 空域关闭与反无人机激光争议</li>
-      <li><b>NYT:</b> 乌克兰奥运选手“头盔事件”被取消资格</li>
-      <li><b>联合早报:</b> 特朗普访华预期与中方回应</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>交叉议题对比（示例）</h2>
-    <p><b>“乌克兰选手头盔事件”</b>：Reuters 更偏规则执行与事件结果；NYT 更强调战争记忆表达与中立边界冲突。</p>
-  </div>
-
-  <div class="card">
-    <h2>原文入口（持续补全）</h2>
-    <ul>
-      <li>Reuters（Google News RSS）：<a href="https://news.google.com/rss/search?q=site%3Areuters.com&hl=en-US&gl=US&ceid=US%3Aen">RSS Link</a></li>
-      <li>NYT HomePage RSS：<a href="https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml">RSS Link</a></li>
-      <li>联合早报：<a href="https://www.zaobao.com.sg/news/china">https://www.zaobao.com.sg/news/china</a></li>
-      <li>人民日报 politics RSS：<a href="http://www.people.com.cn/rss/politics.xml">RSS Link</a></li>
-      <li>环球时报 RSS：<a href="https://www.globaltimes.cn/rss/outbrain.xml">RSS Link</a></li>
-    </ul>
-  </div>
-
-  <p class="muted">最后更新：2026-02-12 20:40</p>
 </body>
 </html>
